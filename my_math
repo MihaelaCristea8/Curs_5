@@ -1,0 +1,41 @@
+import math
+
+numar=int(input("Introduceti numarul: "))
+
+def numar_prim(numar):
+    global numere_prime
+    global numere_verificate
+    numere_prime=0
+    numere_verificate=0
+    if numar>1:
+        for i in range (2, numar):
+            if numar%i==0:
+                print (str (numar) + " nu este numar prim") 
+                numere_verificate+=1
+                break
+        else:
+            print(str(numar)+" este numar prim")   
+            numere_verificate+=1
+            numere_prime +=1
+    else:
+        print (str(numar)+" nu este numar prim")
+        numere_verificate+=1
+  
+        
+
+def patrat_perfect(numar):
+    global numere_patrat_perfect
+    global numere_verificate
+    numere_patrat_perfect=0
+    numere_verificate=0
+    r=math.sqrt(numar)
+    if r*r==numar:
+        print (str(numar)+" este patrat perfect")
+        numere_verificate+=1
+        numere_patrat_perfect +=1    
+    else:
+        print(str(numar)+" nu este patrat perfect")
+        numere_verificate+=1
+    print (str(numere_verificate) +" numere verificate")
+    print (str(numere_prime) + " numere prime")
+    print (str(numere_patrat_perfect) + " numere patrat perfect")
