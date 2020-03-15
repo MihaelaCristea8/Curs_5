@@ -1,0 +1,15 @@
+string=input("Introduceti textul: ")
+
+def litera_mare():
+    propozitie=string.split('.')
+    for i in propozitie:
+        print (i.capitalize(), end ='.')
+        
+    
+   
+def dictionar():
+    d={}
+    for i in string:
+        d[i]=d.get(i,0) +1
+    for k,v in d.items():
+        print("{}:{}".format(k,v), end =',')
