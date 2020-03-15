@@ -1,0 +1,11 @@
+string=input("Introduceti textul: ")
+numar=int(input("Introduceti numarul: "))
+
+import my_math
+import my_string
+
+my_math.numar_prim(numar)
+my_math.patrat_perfect(numar)
+
+my_string.litera_mare()
+my_string.dictionar()
